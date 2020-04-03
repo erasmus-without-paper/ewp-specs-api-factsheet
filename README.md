@@ -41,7 +41,7 @@ of it. The server is REQUIRED to process all of them.
 
 Server implementers provide their own chosen value of `<max-hei-ids>` via their
 manifest entry (see [manifest-entry.xsd](manifest-entry.xsd)). Clients SHOULD
-parse this value (or assume its equal to `1`).
+parse this value (or assume it is equal to `1`).
 
 Clients may retrieve proper HEI identifiers from other EWP APIs (most often,
 the [Registry Service][registry-spec]). Servers MUST be able to accept all HEI
