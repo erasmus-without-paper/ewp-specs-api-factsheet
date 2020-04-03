@@ -1,0 +1,41 @@
+<factsheet-response
+    xmlns="https://github.com/erasmus-without-paper/ewp-specs-api-factsheet/tree/stable-v1"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:c="https://github.com/erasmus-without-paper/ewp-specs-types-contact/tree/stable-v1"
+    xmlns:p="https://github.com/erasmus-without-paper/ewp-specs-types-phonenumber/tree/stable-v1"
+    xsi:schemaLocation="
+       https://github.com/erasmus-without-paper/ewp-specs-api-factsheet/tree/stable-v1
+       https://raw.githubusercontent.com/erasmus-without-paper/ewp-specs-api-factsheet/stable-v1/response.xsd 
+     ">
+    <calendar>
+        <!-- date format: - -MM-yy -->
+        <student-nominations>
+            <autumn-term>--04-10</autumn-term>
+            <spring-term>--12-10</spring-term>
+        </student-nominations>
+        <student-applications>
+            <autumn-term>--04-19</autumn-term>
+            <spring-term>--10-19</spring-term>
+        </student-applications>
+    </calendar>
+    <application-contact>
+        <c:contact-name>Sylwia Nowak</c:contact-name>
+        <c:person-given-names>Sylwia</c:person-given-names>
+        <c:person-family-name>Nowak</c:person-family-name>
+        <p:phone-number>
+            <p:e164>+4723456789</p:e164>
+        </p:phone-number>
+        <c:email>email@example.com</c:email>
+    </application-contact>
+    <application-website>http://example-hei.edu/application</application-website>
+    <additional-requirement>
+        <name>Academic requirements</name>
+        <details>Number of ECTS completed. Subject area code - ISCED. EQF level.</details>
+        <information-website>http://example-hei.edu/application/requirements</information-website>
+    </additional-requirement>
+    <additional-requirement>
+        <name>CV</name>
+        <information-website>http://example-hei.edu/application/documents/cv</information-website>
+    </additional-requirement>
+
+</factsheet-response>
