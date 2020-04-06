@@ -5,7 +5,7 @@
     xmlns:p="https://github.com/erasmus-without-paper/ewp-specs-types-phonenumber/tree/stable-v1"
     xsi:schemaLocation="
        https://github.com/erasmus-without-paper/ewp-specs-api-factsheet/tree/stable-v1
-       https://raw.githubusercontent.com/erasmus-without-paper/ewp-specs-api-factsheet/stable-v1/response.xsd 
+       https://raw.githubusercontent.com/erasmus-without-paper/ewp-specs-api-factsheet/stable-v1/response.xsd
      ">
     <calendar>
         <!-- date format: - -MM-yy -->
@@ -18,16 +18,18 @@
             <spring-term>--10-19</spring-term>
         </student-applications>
     </calendar>
-    <application-contact>
-        <c:contact-name>Sylwia Nowak</c:contact-name>
-        <c:person-given-names>Sylwia</c:person-given-names>
-        <c:person-family-name>Nowak</c:person-family-name>
-        <p:phone-number>
-            <p:e164>+4723456789</p:e164>
-        </p:phone-number>
-        <c:email>email@example.com</c:email>
-    </application-contact>
-    <application-website>http://example-hei.edu/application</application-website>
+    <application-info>
+        <c:contact>
+            <c:contact-name>Sylwia Nowak</c:contact-name>
+            <c:person-given-names>Sylwia</c:person-given-names>
+            <c:person-family-name>Nowak</c:person-family-name>
+            <p:phone-number>
+                <p:e164>+4723456789</p:e164>
+            </p:phone-number>
+            <c:email>email@example.com</c:email>
+        </c:contact>
+        <website-url>http://example-hei.edu/application</website-url>
+    </application-info>
     <additional-requirement>
         <name>Academic requirements</name>
         <details>Number of ECTS completed. Subject area code - ISCED. EQF level.</details>
@@ -37,5 +39,70 @@
         <name>CV</name>
         <information-website>http://example-hei.edu/application/documents/cv</information-website>
     </additional-requirement>
-
+    <decision-weeks-limit>4</decision-weeks-limit>
+    <tor-weeks-limit>3</tor-weeks-limit>
+    <accessibility>
+        <type>service</type>
+        <name>Office for persons with disabilities</name>
+        <information>
+            <c:contact>
+                <c:contact-name>Tomasz Maliński</c:contact-name>
+                <c:person-given-names>Tomasz</c:person-given-names>
+                <c:person-family-name>Maliński</c:person-family-name>
+                <p:phone-number>
+                    <p:e164>+123456789</p:e164>
+                </p:phone-number>
+                <c:email>email-bon@example.com</c:email>
+            </c:contact>
+            <website-url xml:lang="en">https://bon.uw.edu.pl/en/</website-url>
+        </information>
+    </accessibility>
+    <housing-info>
+        <c:contact>
+            <c:contact-name>Office of Housing and Other Very Important Things</c:contact-name>
+            <p:phone-number>
+                <p:e164>+136794613</p:e164>
+            </p:phone-number>
+            <p:phone-number>
+                <p:e164>+123456789</p:e164>
+            </p:phone-number>
+            <c:email>email-housing@example.com</c:email>
+        </c:contact>
+        <website-url xml:lang="en">http://iro.example-hei.edu/housing</website-url>
+    </housing-info>
+    <visa-info>
+        <c:contact>
+            <c:contact-name>Office of Housing and Other Very Important Things</c:contact-name>
+            <p:phone-number>
+                <p:e164>+22556677</p:e164>
+            </p:phone-number>
+            <p:phone-number>
+                <p:e164>+44332200</p:e164>
+            </p:phone-number>
+            <c:email>email-visa@example.com</c:email>
+        </c:contact>
+        <website-url xml:lang="en">http://iro.example-hei.edu/visa</website-url>
+        <website-url xml:lang="en">http://www.msz.gov.pl/en/travel_to_poland/visa/</website-url>
+    </visa-info>
+    <insurance-info>
+        <c:contact>
+            <c:contact-name>International Relations Office, Insurance Section</c:contact-name>
+            <p:phone-number>
+                <p:e164>+1234546789</p:e164>
+            </p:phone-number>
+            <c:email>email-insurance@example.com</c:email>
+        </c:contact>
+        <website-url xml:lang="en">http://iro.example-hei.edu/insurance</website-url>
+    </insurance-info>
+    <additional-info>
+        <type>Recognition process</type>
+        <info>
+            <c:contact>
+                <c:contact-name>International Relations Office</c:contact-name>
+                <c:email>email-recognition@example.com</c:email>
+                <c:email>email-recognition2@example.com</c:email>
+            </c:contact>
+            <website-url xml:lang="en">http://iro.example-hei.edu/recognition</website-url>
+        </info>
+    </additional-info>
 </factsheet-response>

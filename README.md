@@ -10,8 +10,6 @@ Summary
 
 This document describes the **Mobility Factsheet API**. This API allows partners to share
 all the information useful for incoming students in the mobility process.
-**This API is still in progress.** In particular, the content of the response does not yet correspond fully to the
-[Interinstitutional Agreement template](https://github.com/erasmus-without-paper/ewp-specs-api-iias/blob/stable-v2/resources/template_EuropeanCommission_IIA_21-29.pdf).
 
 
 Request method
