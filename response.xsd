@@ -1,6 +1,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xml="http://www.w3.org/XML/1998/namespace"
-    xmlns:c="https://github.com/erasmus-without-paper/ewp-specs-types-contact/tree/stable-v1"
     xmlns:ewp="https://github.com/erasmus-without-paper/ewp-specs-architecture/blob/stable-v1/common-types.xsd"
+    xmlns:p="https://github.com/erasmus-without-paper/ewp-specs-types-phonenumber/tree/stable-v1"
     elementFormDefault="qualified"
     targetNamespace="https://github.com/erasmus-without-paper/ewp-specs-api-factsheet/tree/stable-v1"
     xmlns="https://github.com/erasmus-without-paper/ewp-specs-api-factsheet/tree/stable-v1">
@@ -10,8 +10,8 @@
         namespace="https://github.com/erasmus-without-paper/ewp-specs-architecture/blob/stable-v1/common-types.xsd" />
 
     <xs:import
-        schemaLocation="https://raw.githubusercontent.com/erasmus-without-paper/ewp-specs-types-contact/stable-v1/schema.xsd"
-        namespace="https://github.com/erasmus-without-paper/ewp-specs-types-contact/tree/stable-v1" />
+        schemaLocation="https://raw.githubusercontent.com/erasmus-without-paper/ewp-specs-types-phonenumber/stable-v1/schema.xsd"
+        namespace="https://github.com/erasmus-without-paper/ewp-specs-types-phonenumber/tree/stable-v1" />
 
     <xs:annotation>
         <xs:documentation>
@@ -21,8 +21,6 @@
             http://developers.erasmuswithoutpaper.eu/
         </xs:documentation>
     </xs:annotation>
-
-    <!-- TODO which elements should be required? -->
 
     <xs:element name="factsheet-response">
         <xs:annotation>
@@ -64,7 +62,8 @@
                 <xs:element name="application-info" type="InformationEntry" minOccurs="1" maxOccurs="1">
                     <xs:annotation>
                         <xs:documentation>
-                            Contact and information about the application process.
+                            Contact and information about the application process. The website-url is not
+                            required in the `InformationEntry` type, but the application website url SHOULD be provided.
                         </xs:documentation>
                     </xs:annotation>
                 </xs:element>
@@ -72,9 +71,9 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
-                            <xs:element name="details" type="xs:string" minOccurs="0" maxOccurs="1" />
+                            <xs:element name="details" type="xs:string" minOccurs="1" maxOccurs="1" />
                             <xs:element name="information-website" type="ewp:HTTPWithOptionalLang"
-                                minOccurs="0" maxOccurs="unbounded" />
+                                minOccurs="1" maxOccurs="unbounded" />
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -165,9 +164,11 @@
 
     <xs:complexType name="InformationEntry">
         <xs:sequence>
-            <xs:element ref="c:contact" minOccurs="1" maxOccurs="1" />
-            <xs:element name="website-url" type="ewp:HTTPWithOptionalLang" minOccurs="1"
-                maxOccurs="unbounded" />
+            <xs:element name="email" type="ewp:Email" minOccurs="1" maxOccurs="1" />
+            <xs:element ref="p:phone-number" minOccurs="1" maxOccurs="1" />
+            <!-- TODO Dashboard has website url required for application, additional requirements and additional information, 
+                not required for housing, visa and insurance -->
+            <xs:element name="website-url" type="ewp:HTTPWithOptionalLang" minOccurs="0" maxOccurs="1" />
         </xs:sequence>
     </xs:complexType>
 
