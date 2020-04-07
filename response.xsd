@@ -23,7 +23,6 @@
     </xs:annotation>
 
     <!-- TODO which elements should be required? -->
-    <!-- TODO add missing fields -->
 
     <xs:element name="factsheet-response">
         <xs:annotation>

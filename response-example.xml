@@ -8,7 +8,7 @@
        https://raw.githubusercontent.com/erasmus-without-paper/ewp-specs-api-factsheet/stable-v1/response.xsd
      ">
     <calendar>
-        <!-- date format: - -MM-yy -->
+        <!-- date format: - -MM-dd -->
         <student-nominations>
             <autumn-term>--04-10</autumn-term>
             <spring-term>--12-10</spring-term>
