@@ -73,7 +73,7 @@
                             <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
                             <xs:element name="details" type="xs:string" minOccurs="1" maxOccurs="1" />
                             <xs:element name="information-website" type="ewp:HTTPWithOptionalLang"
-                                minOccurs="1" maxOccurs="unbounded" />
+                                minOccurs="0" maxOccurs="unbounded" />
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -93,7 +93,7 @@
                         </xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="accessibility" minOccurs="0" maxOccurs="1">
+                <xs:element name="accessibility" minOccurs="0" maxOccurs="unbounded">
                     <xs:annotation>
                         <xs:documentation>
                             The institution will provide support to incoming mobile participants with
@@ -166,9 +166,7 @@
         <xs:sequence>
             <xs:element name="email" type="ewp:Email" minOccurs="1" maxOccurs="1" />
             <xs:element ref="p:phone-number" minOccurs="1" maxOccurs="1" />
-            <!-- TODO Dashboard has website url required for application, additional requirements and additional information, 
-                not required for housing, visa and insurance -->
-            <xs:element name="website-url" type="ewp:HTTPWithOptionalLang" minOccurs="0" maxOccurs="1" />
+            <xs:element name="website-url" type="ewp:HTTPWithOptionalLang" minOccurs="1" maxOccurs="1" />
         </xs:sequence>
     </xs:complexType>
 
