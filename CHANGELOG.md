@@ -9,6 +9,8 @@ starting from its first beta draft version.
 -----
 
 * Add missing manifest-entry file
+* Allow to send many factsheets (one for each requested hei) in the response
+* Fix path in the example
 
 
 0.1.0
