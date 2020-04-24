@@ -187,7 +187,7 @@
         <xs:sequence>
             <xs:element name="email" type="ewp:Email" minOccurs="1" maxOccurs="1" />
             <xs:element ref="p:phone-number" minOccurs="1" maxOccurs="1" />
-            <xs:element name="website-url" type="ewp:HTTPWithOptionalLang" minOccurs="1" maxOccurs="1" />
+            <xs:element name="website-url" type="ewp:HTTPWithOptionalLang" minOccurs="1" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
 
