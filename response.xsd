@@ -79,9 +79,7 @@
                             <xs:element name="application-info" type="InformationEntry" minOccurs="1" maxOccurs="1">
                                 <xs:annotation>
                                     <xs:documentation>
-                                        Contact and information about the application process. The website-url is not
-                                        required in the `InformationEntry` type, but the application website url SHOULD
-                                        be provided.
+                                        Contact and information about the application process.
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
