@@ -65,7 +65,7 @@
         <additional-requirement>
             <name>Privacy statement</name>
             <details>Please, read, as you will have to agree to it</details>
-            <information-website>https://uw.edu.pl/privacy_statement</information-website>
+            <information-website>https://example-hei.edu/privacy-statement</information-website>
         </additional-requirement>
         <additional-requirement>
             <name>Academic requirements</name>
