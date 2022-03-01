@@ -102,8 +102,8 @@
                                         - CV (PDF or URL - for Europass CV),
                                         - Other document (PDF).
 
-                                        There are also requirements that only need to be acknowledged
-                                        by the incoming students.
+                                        There are also requirements that should only be communicated
+                                        to the incoming students, without taking any feedback from them.
                                         Names of such requirements are not defined but MUST NOT match the list above.
                                     </xs:documentation>
                                 </xs:annotation>
