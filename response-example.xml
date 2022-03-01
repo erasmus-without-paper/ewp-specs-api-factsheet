@@ -67,11 +67,6 @@
             <details>Please, read, as you will have to agree to it</details>
             <information-website>https://example-hei.edu/privacy-statement</information-website>
         </additional-requirement>
-        <additional-requirement>
-            <name>Academic requirements</name>
-            <details>Number of ECTS completed; Subject area code - ISCED; EQF level</details>
-            <information-website>https://example-hei.edu/application/requirements</information-website>
-        </additional-requirement>
         <decision-weeks-limit>4</decision-weeks-limit>
         <tor-weeks-limit>3</tor-weeks-limit>
         <accessibility>
