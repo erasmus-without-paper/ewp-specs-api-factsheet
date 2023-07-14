@@ -12,6 +12,20 @@ This document describes the **Mobility Factsheet API**. This API allows partners
 all the information useful for incoming students in the mobility process.
 
 
+Caching
+-------
+
+Implementing HTTP Caching for both client and server is recommended for this API,
+as it can be heavily used while the data being served is rarely being changed.
+
+Servers can define how long data should be considered fresh with Cache-Control max-age.
+ETag can optimize HTTP load when data cannot be considered fresh anymore.
+
+"Permanent" caching may also be used, if needed, by specifying a very long freshness threshold
+while invalidating the cache by changing the endpoint URL when data changes,
+e.g. by adding the last modification date to that URL.
+
+
 Request method
 --------------
 
