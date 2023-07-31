@@ -4,10 +4,21 @@ Release notes
 This document describes all the changes made to the *Mobility Factsheet API* document,
 starting from its first beta draft version.
 
-1.1.0
+1.2.0
 -----
 
 * Added recommendation to implement HTTP caching.
+
+
+1.1.0
+-----
+
+* Removed "Academic requirements" from example.
+* Made some rewording concerning nomination requirements.
+* Added documentation of nomination requirement types.
+* Introduced more consistent example link.
+* Added all predefined requirements to example.
+* Added missing release note to changelog.
 
 
 1.0.0
