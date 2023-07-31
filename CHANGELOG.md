@@ -4,10 +4,17 @@ Release notes
 This document describes all the changes made to the *Mobility Factsheet API* document,
 starting from its first beta draft version.
 
+1.1.0
+-----
+
+* Added recommendation to implement HTTP caching.
+
+
 1.0.0
 -----
 
 * First official release.
+
 
 0.3.0
 -----
